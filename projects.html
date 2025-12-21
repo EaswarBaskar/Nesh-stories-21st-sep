@@ -1,0 +1,1056 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="icon" href="img/favicon.png" type="image/png">
+    <title>NESH STORIES</title>
+
+    <!-- CSS bundles from your project -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="vendors/linericon/style.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="vendors/lightbox/simpleLightbox.css">
+    <link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
+    <link rel="stylesheet" href="vendors/animate-css/animate.css">
+    <link rel="stylesheet" href="vendors/flaticon/flaticon.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/style11.css">
+    <link rel="stylesheet" href="css/style12.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css'>
+    <link rel="stylesheet" href="css/style41.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <link rel="stylesheet" href="css/style61.css">
+    <link rel="stylesheet" href="css/style81.css">
+    <link rel="stylesheet" href="css/style91.css">
+
+    <!-- Process section scoped styles -->
+    <style>
+      /* ===== Process Section Styles (scoped) ===== */
+      .process-section{
+        background:#f5cbbe;            /* solid – only this color */
+        color:#2c2c2c;
+        padding:64px 0;
+      }
+      .process-heading{ color:#fff; margin-bottom:6px; font-weight:800; }
+      .process-sub{ color:#fff; opacity:.95; margin-bottom:20px; }
+
+      /* Filter buttons */
+      .process-filters{
+        display:flex; flex-wrap:wrap; gap:10px; justify-content:center; margin-bottom:22px;
+      }
+      .process-filter{
+        border:1px solid rgba(0,0,0,.06);
+        background:#ffe7dd;
+        padding:10px 14px; border-radius:999px; cursor:pointer;
+        font-weight:600; transition:transform .05s ease;
+      }
+      .process-filter[aria-pressed="true"]{ background:#ffd3c3; }
+      .process-filter:active{ transform:scale(.98); }
+
+      /* Cards */
+      .process-card{
+        background:#fff; border-radius:18px; padding:18px;
+        box-shadow:0 10px 24px rgba(0,0,0,.08); height:100%;
+        text-align: center;
+      }
+      
+      /* Mobile Responsive Styles */
+      @media (max-width: 767.98px) {
+        .process-col {
+          display: flex;
+          justify-content: center;
+        }
+        .process-card {
+          max-width: 100%;
+          margin: 0 auto;
+        }
+        .process-icon {
+          margin: 0 auto 15px;
+        }
+        .process-title, .process-text {
+          text-align: center;
+        }
+        .process-grid {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+      }
+      .process-icon{ width:28px; height:28px; margin-bottom:8px; color:#b35656; }
+      .process-title{ font-weight:800; }
+      .process-text{ margin-bottom:0; }
+      .process-hide{ display:none !important; }
+      .home_banner_area .banner_inner{min-height:120px} /* keep banner slim */
+      .ftco-footer{padding-top:40px}
+    </style>
+  </head>
+
+  <body>
+    <!--================Header Menu Area =================-->
+    <header class="header_area">
+      <div class="top_menu">
+        <div class="container">
+          <div class="top_inner">
+            <div class="float-left"></div>
+          </div>
+        </div>
+      </div>
+      <div class="main_menu" id="mainNav">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <div class="container">
+            <a class="navbar-brand logo_h" href="index.html">
+              <img src="img/logo.png" alt=""><img src="img/logo-2.png" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+            </button>
+      				<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+							<ul class="nav navbar-nav menu_nav ml-auto">
+								<li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li> 
+								<li class="nav-item submenu dropdown">
+									<a href="projects.html" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Projects</a>
+									<ul class="dropdown-menu">
+										<li class="nav-item"><a class="nav-link" href="projects.html?filter=modular">Modular Interiors</a></li>
+                    <li class="nav-item"><a class="nav-link" href="projects.html?filter=full">Full Home Interiors</a></li>
+                    <li class="nav-item"><a class="nav-link" href="projects.html?filter=renovation">Home Renovation</a></li>
+                    <li class="nav-item"><a class="nav-link" href="projects.html?filter=bare">Bare Shell Interiors</a></li>
+									</ul>
+								</li>  
+                <li class="nav-item"><a class="nav-link" href="tel:+918939063726">Contact</a></li>
+							</ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!--================End Header =================-->
+
+    <!--================Home Banner Area =================-->
+    <section class="home_banner_area">
+      <div class="banner_inner">
+        <div class="container"><div class="row"></div></div>
+      </div>
+    </section>
+    <!--================End Home Banner Area =================-->
+
+<!-- ========= Process / Steps Section (fixed) ========= -->
+<section class="process-section">
+  <div class="container">
+    <div class="text-center mb-3">
+      <h2 class="process-heading">Our Process</h2>
+      <p class="process-sub">From first chat to aftercare — a smooth, transparent journey.</p>
+    </div>
+
+    <!-- FILTERS -->
+<div class="process-filters" role="tablist" aria-label="Process Filters">
+  <button id="modular" class="process-filter" data-filter="modular" aria-pressed="true">Modular Interiors</button>
+  <button id="full" class="process-filter" data-filter="full">Full Home Interiors</button>
+  <button id="renovation" class="process-filter" data-filter="renovation">Home Renovation</button>
+  <button id="bare" class="process-filter" data-filter="bare">Bare Shell Interiors</button>
+</div>
+
+    <!-- GRID -->
+    <div class="row process-grid">
+
+      <!-- 1 -->
+      <div class="col-12 col-md-6 col-lg-4 mb-4 process-col" data-step="1">
+        <div class="process-card h-100">
+          <div class="process-icon">
+            <i class="fas fa-comments"></i>
+          </div>
+          <h5 class="process-title">1. Initial Consultation</h5>
+          <p class="process-text">We'll start with a detailed conversation to understand your needs, lifestyle, and unique vision for your kitchen. This ensures we're perfectly aligned with your goals from the very beginning.</p>
+        </div>
+      </div>
+
+      <!-- 2 -->
+      <div class="col-12 col-md-6 col-lg-4 mb-4 process-col" data-step="2">
+        <div class="process-card h-100">
+          <div class="process-icon">
+            <i class="fas fa-file-alt"></i>
+          </div>
+          <h5 class="process-title">2. Site Documentation</h5>
+          <p class="process-text">During this phase, we'll capture your specific style preferences, including your ideal colors, materials, and finishes. This creates a clear design blueprint that will guide the entire project.</p>
+        </div>
+      </div>
+
+      <!-- 3 -->
+      <div class="col-12 col-md-6 col-lg-4 mb-4 process-col" data-step="3">
+        <div class="process-card h-100">
+          <div class="process-icon">
+            <i class="fas fa-pencil-ruler"></i>
+          </div>
+          <h5 class="process-title">3. Design & Planning</h5>
+          <p class="process-text">We'll craft detailed, custom layouts and design plans, working closely with your feedback to ensure the final design perfectly matches your vision and functional requirements.</p>
+        </div>
+      </div>
+
+      <!-- 4 -->
+      <div class="col-12 col-md-6 col-lg-4 mb-4 process-col" data-step="4">
+        <div class="process-card h-100">
+          <div class="process-icon">
+            <i class="fas fa-swatchbook"></i>
+          </div>
+          <h5 class="process-title">4. Material & Finishes Selection</h5>
+          <p class="process-text">You'll choose from a curated selection of high-quality materials and exquisite finishes. We'll help you find the perfect match for your design style, ensuring a blend of lasting durability and beautiful aesthetics.</p>
+        </div>
+      </div>
+
+      <!-- 5 -->
+      <div class="col-12 col-md-6 col-lg-4 mb-4 process-col" data-step="5">
+        <div class="process-card h-100">
+          <div class="process-icon">
+            <i class="fas fa-clipboard-check"></i>
+          </div>
+          <h5 class="process-title">5. Feasibility Check</h5>
+          <p class="process-text">We'll conduct a comprehensive review to confirm that the proposed design and chosen materials are both practical and align with your budget, ensuring a seamless journey from concept to reality.</p>
+        </div>
+      </div>
+
+      <!-- 6 -->
+      <div class="col-12 col-md-6 col-lg-4 mb-4 process-col" data-step="6">
+        <div class="process-card h-100">
+          <div class="process-icon">
+            <i class="fas fa-truck"></i>
+          </div>
+          <h5 class="process-title">6. Modular Unit Customization</h5>
+          <p class="process-text">Every modular unit will be custom-made to precisely fit your kitchen space. We'll create tailored solutions for your cabinets, countertops, and storage, ensuring a perfect fit and maximized functionality.</p>
+        </div>
+      </div>
+
+      <!-- 7 -->
+      <div class="col-12 col-md-6 col-lg-4 mb-4 process-col" data-step="7">
+        <div class="process-card h-100">
+          <div class="process-icon">
+            <i class="fas fa-tools"></i>
+          </div>
+          <h5 class="process-title">7. Manufacturing and Installation</h5>
+          <p class="process-text">We'll meticulously manage the manufacturing and expert installation of your custom-designed modular units. Our focus is on precision and quality, ensuring every detail is perfect.</p>
+        </div>
+      </div>
+
+      <!-- 8 -->
+      <div class="col-12 col-md-6 col-lg-4 mb-4 process-col" data-step="8">
+        <div class="process-card h-100">
+          <div class="process-icon">
+            <i class="fas fa-paint-roller"></i>
+          </div>
+          <h5 class="process-title">8. Handover</h5>
+          <p class="process-text">We'll conduct a final walkthrough with you to ensure every aspect of the project meets your expectations before officially handing over your stunning, newly crafted kitchen.</p>
+        </div>
+      </div>
+
+      <!-- 9 -->
+      <div class="col-12 col-md-6 col-lg-4 mb-4 process-col" data-step="9">
+        <div class="process-card h-100">
+          <div class="process-icon">
+            <i class="fas fa-home"></i>
+          </div>
+          <h5 class="process-title">9. Aftercare</h5>
+          <p class="process-text">Our support doesn't end with installation. We'll provide ongoing maintenance guidance and remain available to address any post-installation questions, ensuring your new kitchen stays in pristine condition.</p>
+        </div>
+      </div>
+
+      <!-- 11 -->
+      <div class="col-12 col-md-6 col-lg-4 mb-4 process-col" data-step="11">
+        <div class="process-card h-100">
+          <div class="process-icon">
+            <i class="fas fa-handshake"></i>
+          </div>
+          <h5 class="process-title">1. Initial Consultation</h5>
+          <p class="process-text">We'll begin with an in-depth conversation to fully grasp your renovation aspirations, stylistic preferences, and financial plan. This ensures we're perfectly aligned with your vision from the start.</p>
+        </div>
+      </div>
+
+      <!-- 12 -->
+      <div class="col-12 col-md-6 col-lg-4 mb-4 process-col" data-step="12">
+        <div class="process-card h-100">
+          <div class="process-icon">
+            <i class="fas fa-file-contract"></i>
+          </div>
+          <h5 class="process-title">2. Style Documentation</h5>
+          <p class="process-text">In this phase, we'll carefully document your preferred style, including specific color palettes, materials, and finishes. This creates a clear design blueprint that will guide the entire project.</p>
+        </div>
+      </div>
+
+      <!-- 13 -->
+      <div class="col-12 col-md-6 col-lg-4 mb-4 process-col" data-step="13">
+        <div class="process-card h-100">
+          <div class="process-icon">
+            <i class="fas fa-tape"></i>
+          </div>
+          <h5 class="process-title">3. Design & Planning</h5>
+          <p class="process-text">We will develop comprehensive design plans and custom layouts, refining them with your feedback to ensure the final result perfectly matches your vision and functional needs.</p>
+        </div>
+      </div>
+
+      <!-- 14 -->
+      <div class="col-12 col-md-6 col-lg-4 mb-4 process-col" data-step="14">
+        <div class="process-card h-100">
+          <div class="process-icon">
+            <i class="fas fa-truck-loading"></i>
+          </div>
+          <h5 class="process-title">4. Material & Finishes Selection</h5>
+          <p class="process-text">You'll choose from a curated selection of premium materials and exquisite finishes. We'll help you select options that not only match your design aesthetic but also ensure lasting durability.</p>
+        </div>
+      </div>
+
+      <!-- 15 -->
+      <div class="col-12 col-md-6 col-lg-4 mb-4 process-col" data-step="15">
+        <div class="process-card h-100">
+          <div class="process-icon">
+            <i class="fas fa-clipboard-list"></i>
+          </div>
+          <h5 class="process-title">5. Feasibility Check</h5>
+          <p class="process-text">We will conduct a meticulous review to confirm that the proposed design, materials, and structural changes are practical and remain within your budget, ensuring a smooth and realistic path forward.</p>
+        </div>
+      </div>
+
+      <!-- 16 -->
+      <div class="col-12 col-md-6 col-lg-4 mb-4 process-col" data-step="16">
+        <div class="process-card h-100">
+          <div class="process-icon">
+            <i class="fas fa-hammer"></i>
+          </div>
+          <h5 class="process-title">6. Structural Customization</h5>
+          <p class="process-text">Our team will plan and execute necessary structural modifications to enhance your space's functionality and aesthetic appeal, all tailored to your specific requirements.</p>
+        </div>
+      </div>
+
+      <!-- 17 -->
+      <div class="col-12 col-md-6 col-lg-4 mb-4 process-col" data-step="17">
+        <div class="process-card h-100">
+          <div class="process-icon">
+            <i class="fas fa-screwdriver"></i>
+          </div>
+          <h5 class="process-title">7. Modular Unit Customization</h5>
+          <p class="process-text">Every modular unit will be custom-built to seamlessly integrate into your renovated space. We'll create tailored solutions for cabinetry, storage, and key functional areas.</p>
+        </div>
+      </div>
+
+      <!-- 18 -->
+      <div class="col-12 col-md-6 col-lg-4 mb-4 process-col" data-step="18">
+        <div class="process-card h-100">
+          <div class="process-icon">
+            <i class="fas fa-paint-brush"></i>
+          </div>
+          <h5 class="process-title">8. On-Site Customization</h5>
+          <p class="process-text">We'll handle on-site customizations for elements that require precise fitting and adjustments, ensuring they integrate flawlessly with your existing structures.</p>
+        </div>
+      </div>
+
+      <!-- 19 -->
+      <div class="col-12 col-md-6 col-lg-4 mb-4 process-col" data-step="19">
+        <div class="process-card h-100">
+          <div class="process-icon">
+            <i class="fas fa-couch"></i>
+          </div>
+          <h5 class="process-title">9. Alteration</h5>
+          <p class="process-text">We will implement all necessary alterations to your existing structures, ensuring these changes are seamlessly integrated into the overall design and significantly improve the space.</p>
+        </div>
+      </div>
+       <!-- 20 -->
+      <div class="col-12 col-md-6 col-lg-4 mb-4 process-col" data-step="20">
+        <div class="process-card h-100">
+          <div class="process-icon">
+            <i class="fas fa-tv"></i>
+          </div>
+          <h5 class="process-title">10.  Manufacturing and Installation</h5>
+          <p class="process-text">We will meticulously oversee the manufacturing and expert installation of your custom-designed modular units and other elements, with a focus on precision and impeccable quality.</p>
+        </div>
+      </div>
+            <!-- 21 -->
+      <div class="col-12 col-md-6 col-lg-4 mb-4 process-col" data-step="21">
+        <div class="process-card h-100">
+          <div class="process-icon">
+            <i class="fas fa-bath"></i>
+          </div>
+          <h5 class="process-title">11. Initiating On-Site Work</h5>
+          <p class="process-text">The on-site work will begin with a clear, structured timeline. We'll manage every detail, from demolition to construction, with transparent and consistent communication.</p>
+        </div>
+      </div>
+            <!-- 22 -->
+      <div class="col-12 col-md-6 col-lg-4 mb-4 process-col" data-step="22">
+        <div class="process-card h-100">
+          <div class="process-icon">
+            <i class="fas fa-toilet"></i>
+          </div>
+          <h5 class="process-title">12. Testing & Commissioning</h5>
+          <p class="process-text">Every newly installed system and feature will undergo rigorous testing. We'll make any necessary adjustments to ensure everything is functioning perfectly and meets our high standards.</p>
+        </div>
+      </div>
+            <!-- 23 -->
+      <div class="col-12 col-md-6 col-lg-4 mb-4 process-col" data-step="23">
+        <div class="process-card h-100">
+          <div class="process-icon">
+            <i class="fas fa-utensils"></i>
+          </div>
+          <h5 class="process-title">13. SNAG Clearance</h5>
+          <p class="process-text">We will conduct a thorough final inspection to identify and resolve any minor issues. This ensures every detail is flawless before we consider the project complete.</p>
+        </div>
+      </div>
+            <!-- 24 -->
+      <div class="col-12 col-md-6 col-lg-4 mb-4 process-col" data-step="24">
+        <div class="process-card h-100">
+          <div class="process-icon">
+            <i class="fas fa-bed"></i>
+          </div>
+          <h5 class="process-title">14. Handover</h5>
+          <p class="process-text">We'll do a final walkthrough with you to ensure your complete satisfaction before we officially hand over your beautiful, newly renovated space.</p>
+        </div>
+      </div>
+            <!-- 25 -->
+      <div class="col-12 col-md-6 col-lg-4 mb-4 process-col" data-step="25">
+        <div class="process-card h-100">
+          <div class="process-icon">
+            <i class="fas fa-door-open"></i>
+          </div>
+          <h5 class="process-title">15. Aftercare</h5>
+          <p class="process-text">Our support continues after the project is complete. We'll provide ongoing maintenance advice and remain available to address any post-renovation questions you may have.</p>
+        </div>
+      </div>
+      <!-- 31 -->
+      <div class="col-12 col-md-6 col-lg-4 mb-4 process-col" data-step="31">
+        <div class="process-card h-100">
+          <div class="process-icon">
+            <i class="fas fa-comments"></i>
+          </div>
+          <h5 class="process-title">1. Initial Consultation</h5>
+          <p class="process-text">We'll start with a personal meeting to delve into your unique vision, lifestyle, and aspirations for your space. Our goal is to gain a deep understanding of your needs from the very beginning.</p>
+        </div>
+      </div>
+
+      <!-- 32 -->
+      <div class="col-12 col-md-6 col-lg-4 mb-4 process-col" data-step="32">
+        <div class="process-card h-100">
+          <div class="process-icon">
+            <i class="fas fa-file-alt"></i>
+          </div>
+          <h5 class="process-title">2. Style Documentation</h5>
+          <p class="process-text">In this phase, we'll capture your design preferences and aesthetic choices, creating a detailed design brief that serves as the guiding principle for the entire project.</p>
+        </div>
+      </div>
+
+      <!-- 33 -->
+      <div class="col-12 col-md-6 col-lg-4 mb-4 process-col" data-step="33">
+        <div class="process-card h-100">
+          <div class="process-icon">
+            <i class="fas fa-pencil-ruler"></i>
+          </div>
+          <h5 class="process-title">3. Design and Planning</h5>
+          <p class="process-text">Our team will develop comprehensive and detailed design plans, working closely with your feedback to ensure the final layout is a perfect reflection of your vision and functional requirements.</p>
+        </div>
+      </div>
+
+      <!-- 34 -->
+      <div class="col-12 col-md-6 col-lg-4 mb-4 process-col" data-step="34">
+        <div class="process-card h-100">
+          <div class="process-icon">
+            <i class="fas fa-swatchbook"></i>
+          </div>
+          <h5 class="process-title">4. Material and Finishes</h5>
+          <p class="process-text">You'll choose from a curated selection of premium materials and exquisite finishes. We'll help you find options that not only complement your style but also guarantee lasting quality and beauty.</p>
+        </div>
+      </div>
+
+      <!-- 35 -->
+      <div class="col-12 col-md-6 col-lg-4 mb-4 process-col" data-step="35">
+        <div class="process-card h-100">
+          <div class="process-icon">
+            <i class="fas fa-clipboard-check"></i>
+          </div>
+          <h5 class="process-title">5. Feasibility Check</h5>
+          <p class="process-text">We will conduct a meticulous review to ensure the proposed design, materials, and overall plan are practical and align perfectly with your budget, providing a clear path forward.</p>
+        </div>
+      </div>
+
+      <!-- 36 -->
+      <div class="col-12 col-md-6 col-lg-4 mb-4 process-col" data-step="36">
+        <div class="process-card h-100">
+          <div class="process-icon">
+            <i class="fas fa-truck"></i>
+          </div>
+          <h5 class="process-title">6. Modular Unit Customization</h5>
+          <p class="process-text">We will custom-build every modular unit to flawlessly fit your space. This includes tailored solutions for kitchens, wardrobes, and all storage areas, maximizing both style and utility.</p>
+        </div>
+      </div>
+
+      <!-- 37 -->
+      <div class="col-12 col-md-6 col-lg-4 mb-4 process-col" data-step="37">
+        <div class="process-card h-100">
+          <div class="process-icon">
+            <i class="fas fa-tools"></i>
+          </div>
+          <h5 class="process-title">7. On-Site Customization</h5>
+          <p class="process-text">Our experts will handle on-site customizations for elements that require precise fitting and adjustments, ensuring a seamless and harmonious integration with your home's existing structure.</p>
+        </div>
+      </div>
+
+      <!-- 38 -->
+      <div class="col-12 col-md-6 col-lg-4 mb-4 process-col" data-step="38">
+        <div class="process-card h-100">
+          <div class="process-icon">
+            <i class="fas fa-home"></i>
+          </div>
+          <h5 class="process-title">8. Furniture & Decor Selection</h5>
+          <p class="process-text">We'll help you select and coordinate furniture and decor pieces that beautifully complement your design, bringing a cohesive and polished look to every room.</p>
+        </div>
+      </div>
+
+      <!-- 39 -->
+      <div class="col-12 col-md-6 col-lg-4 mb-4 process-col" data-step="39">
+        <div class="process-card h-100">
+          <div class="process-icon">
+            <i class="fas fa-paint-roller"></i>
+          </div>
+          <h5 class="process-title">9. Manufacturing and Installation</h5>
+          <p class="process-text">We will meticulously oversee the manufacturing of all custom-designed elements and their expert installation, ensuring every piece is crafted and placed with precision and care.</p>
+        </div>
+      </div>
+
+      <!-- 40 -->
+      <div class="col-12 col-md-6 col-lg-4 mb-4 process-col" data-step="40">
+        <div class="process-card h-100">
+          <div class="process-icon">
+            <i class="fas fa-hammer"></i>
+          </div>
+          <h5 class="process-title">10. Initiating On-Site Work</h5>
+          <p class="process-text">The on-site transformation will begin with a structured timeline. We manage all aspects of the work, from initial preparation to final construction, with clear and consistent communication.</p>
+        </div>
+      </div>
+
+      <!-- 41 -->
+      <div class="col-12 col-md-6 col-lg-4 mb-4 process-col" data-step="41">
+        <div class="process-card h-100">
+          <div class="process-icon">
+            <i class="fas fa-screwdriver"></i>
+          </div>
+          <h5 class="process-title">11. Furnishing & Appliances Installation</h5>
+          <p class="process-text">Our team will handle the placement and installation of all furnishings and appliances, ensuring each item is perfectly positioned and fully functional.</p>
+        </div>
+      </div>
+
+      <!-- 42 -->
+      <div class="col-12 col-md-6 col-lg-4 mb-4 process-col" data-step="42">
+        <div class="process-card h-100">
+          <div class="process-icon">
+            <i class="fas fa-paint-brush"></i>
+          </div>
+          <h5 class="process-title">12. Testing & Commissioning</h5>
+          <p class="process-text">Every installed system and appliance will undergo rigorous testing to ensure it operates perfectly and meets our high standards of quality and performance.</p>
+        </div>
+      </div>
+
+      <!-- 43 -->
+      <div class="col-12 col-md-6 col-lg-4 mb-4 process-col" data-step="43">
+        <div class="process-card h-100">
+          <div class="process-icon">
+            <i class="fas fa-tv"></i>
+          </div>
+          <h5 class="process-title">13. SNAG Clearance</h5>
+          <p class="process-text">We'll conduct a comprehensive final inspection to identify and meticulously resolve any remaining details, ensuring every aspect of the project is flawless before handover.</p>
+        </div>
+      </div>
+
+      <!-- 44 -->
+      <div class="col-12 col-md-6 col-lg-4 mb-4 process-col" data-step="44">
+        <div class="process-card h-100">
+          <div class="process-icon">
+            <i class="fas fa-bath"></i>
+          </div>
+          <h5 class="process-title">14. Handover</h5>
+          <p class="process-text">We'll complete a final walkthrough with you to ensure your complete satisfaction before officially handing over your beautifully transformed and move-in-ready space.</p>
+        </div>
+      </div>
+
+      <!-- 45 -->
+      <div class="col-12 col-md-6 col-lg-4 mb-4 process-col" data-step="45">
+        <div class="process-card h-100">
+          <div class="process-icon">
+            <i class="fas fa-toilet"></i>
+          </div>
+          <h5 class="process-title">15. Aftercare</h5>
+          <p class="process-text">Our commitment to you doesn't end with the handover. We provide ongoing support and maintenance advice to help you keep your new interiors in pristine condition for years to come.</p>
+        </div>
+      </div>
+      <!-- 50 -->
+      <div class="col-12 col-md-6 col-lg-4 mb-4 process-col" data-step="50">
+        <div class="process-card h-100">
+          <div class="process-icon"><i class="fas fa-comments"></i></div>
+          <h5 class="process-title">1. Initial Consultation</h5>
+          <p class="process-text">We'll start with a detailed conversation to understand your vision, preferences, and goals for your space. This foundational step ensures we're perfectly aligned with your needs from the very beginning.</p>
+        </div>
+      </div>
+
+      <!-- 51 -->
+      <div class="col-12 col-md-6 col-lg-4 mb-4 process-col" data-step="51">
+        <div class="process-card h-100">
+          <div class="process-icon"><i class="fas fa-file-alt"></i></div>
+          <h5 class="process-title">2. Site Documentation</h5>
+          <p class="process-text">In this phase, we'll capture your specific style and aesthetic choices. This creates a detailed design brief that will guide the entire project from start to finish.</p>
+        </div>
+      </div>
+
+      <!-- 52 -->
+      <div class="col-12 col-md-6 col-lg-4 mb-4 process-col" data-step="52">
+        <div class="process-card h-100">
+          <div class="process-icon"><i class="fas fa-pencil-ruler"></i></div>
+          <h5 class="process-title">3. Design and Planning</h5>
+          <p class="process-text">We'll develop a comprehensive set of design plans and layouts, integrating your feedback to ensure the final design is a perfect blend of your vision and functional needs.</p>
+        </div>
+      </div>
+
+      <!-- 53 -->
+      <div class="col-12 col-md-6 col-lg-4 mb-4 process-col" data-step="53">
+        <div class="process-card h-100">
+          <div class="process-icon"><i class="fas fa-swatchbook"></i></div>
+          <h5 class="process-title">4. Material and Finishes</h5>
+          <p class="process-text">You'll choose from a curated selection of premium materials and finishes. We'll help you find options that not only match your design style but also guarantee lasting durability and beauty.</p>
+        </div>
+      </div>
+
+      <!-- 54 -->
+      <div class="col-12 col-md-6 col-lg-4 mb-4 process-col" data-step="54">
+        <div class="process-card h-100">
+          <div class="process-icon"><i class="fas fa-clipboard-check"></i></div>
+          <h5 class="process-title">5. Feasibility Check</h5>
+          <p class="process-text">We will conduct a meticulous review to ensure the proposed design and materials are practical and align perfectly with your budget, providing a clear and realistic path forward.</p>
+        </div>
+      </div>
+
+      <!-- 55 -->
+      <div class="col-12 col-md-6 col-lg-4 mb-4 process-col" data-step="55">
+        <div class="process-card h-100">
+          <div class="process-icon"><i class="fas fa-truck"></i></div>
+          <h5 class="process-title">6. Structural Customization</h5>
+          <p class="process-text">Our team will plan and execute any necessary structural modifications to enhance your space's functionality and aesthetics, all precisely tailored to your specific needs.</p>
+        </div>
+      </div>
+
+      <!-- 56 -->
+      <div class="col-12 col-md-6 col-lg-4 mb-4 process-col" data-step="56">
+        <div class="process-card h-100">
+          <div class="process-icon"><i class="fas fa-screwdriver"></i></div>
+          <h5 class="process-title">7. Modular Unit Customization</h5>
+          <p class="process-text">Every modular unit will be custom-built to integrate flawlessly into your space. We'll create tailored solutions for cabinetry, storage, and other functional areas to maximize utility and style.</p>
+        </div>
+      </div>
+
+      <!-- 57 -->
+      <div class="col-12 col-md-6 col-lg-4 mb-4 process-col" data-step="57">
+        <div class="process-card h-100">
+          <div class="process-icon"><i class="fas fa-paint-brush"></i></div>
+          <h5 class="process-title">8. On-Site Customization</h5>
+          <p class="process-text">We'll handle on-site customizations for elements that need precise fitting and adjustments, ensuring a seamless and harmonious integration with the existing structure.</p>
+        </div>
+      </div>
+
+      <!-- 58 -->
+      <div class="col-12 col-md-6 col-lg-4 mb-4 process-col" data-step="58">
+        <div class="process-card h-100">
+          <div class="process-icon"><i class="fas fa-couch"></i></div>
+          <h5 class="process-title">9. Alteration</h5>
+          <p class="process-text">We will implement all necessary alterations to your existing structures, ensuring these changes are integrated seamlessly into the overall design and improve the space's flow and function.</p>
+        </div>
+      </div>
+
+      <!-- 59 -->
+      <div class="col-12 col-md-6 col-lg-4 mb-4 process-col" data-step="59">
+        <div class="process-card h-100">
+          <div class="process-icon"><i class="fas fa-couch"></i></div>
+          <h5 class="process-title">10. Furniture & Decor</h5>
+          <p class="process-text">We'll help you select and coordinate furniture and decor that perfectly complement your design, bringing a cohesive and polished look to every room.</p>
+        </div>
+      </div>
+
+      <!-- 60 -->
+      <div class="col-12 col-md-6 col-lg-4 mb-4 process-col" data-step="60">
+        <div class="process-card h-100">
+          <div class="process-icon"><i class="fas fa-hammer"></i></div>
+          <h5 class="process-title">11. Civil Work Initiation</h5>
+          <p class="process-text">The civil work will begin with a structured timeline and clear communication. We’ll manage all aspects of the project, from initial demolition to foundational construction, with a focus on precision.</p>
+        </div>
+      </div>
+
+      <!-- 61 -->
+      <div class="col-12 col-md-6 col-lg-4 mb-4 process-col" data-step="61">
+        <div class="process-card h-100">
+          <div class="process-icon"><i class="fas fa-tools"></i></div>
+          <h5 class="process-title">12. Manufacturing and Installation</h5>
+          <p class="process-text">We will meticulously oversee the manufacturing and expert installation of your custom-designed furniture and modular units, ensuring impeccable quality in every detail.</p>
+        </div>
+      </div>
+
+      <!-- 62 -->
+      <div class="col-12 col-md-6 col-lg-4 mb-4 process-col" data-step="62">
+        <div class="process-card h-100">
+          <div class="process-icon"><i class="fas fa-bath"></i></div>
+          <h5 class="process-title">13. Initiating On-Site Work</h5>
+          <p class="process-text">We'll begin the on-site transformation with a clear timeline, managing all aspects of the work with transparent and consistent communication.</p>
+        </div>
+      </div>
+
+      <!-- 63 -->
+      <div class="col-12 col-md-6 col-lg-4 mb-4 process-col" data-step="63">
+        <div class="process-card h-100">
+          <div class="process-icon"><i class="fas fa-toilet"></i></div>
+          <h5 class="process-title">14. Furnishing & Appliances</h5>
+          <p class="process-text">Our team will handle the installation of all furnishings and appliances, ensuring each piece is perfectly placed and fully functional.</p>
+        </div>
+      </div>
+
+      <!-- 64 -->
+      <div class="col-12 col-md-6 col-lg-4 mb-4 process-col" data-step="64">
+        <div class="process-card h-100">
+          <div class="process-icon"><i class="fas fa-check-circle"></i></div>
+          <h5 class="process-title">15. Testing & Commissioning</h5>
+          <p class="process-text">Every installed system and appliance will undergo a rigorous testing phase. We'll make any necessary adjustments to ensure everything operates perfectly and meets your expectations.</p>
+        </div>
+      </div>
+
+      <!-- 65 -->
+      <div class="col-12 col-md-6 col-lg-4 mb-4 process-col" data-step="65">
+        <div class="process-card h-100">
+          <div class="process-icon"><i class="fas fa-clipboard-list"></i></div>
+          <h5 class="process-title">16. SNAG Clearance</h5>
+          <p class="process-text">We'll conduct a comprehensive final inspection to identify and meticulously resolve any remaining details. This ensures every aspect of the project is flawless before we consider it complete.</p>
+        </div>
+      </div>
+
+      <!-- 66 -->
+      <div class="col-12 col-md-6 col-lg-4 mb-4 process-col" data-step="66">
+        <div class="process-card h-100">
+          <div class="process-icon"><i class="fas fa-handshake"></i></div>
+          <h5 class="process-title">17. Handover</h5>
+          <p class="process-text">We'll complete a final walkthrough with you to ensure your complete satisfaction before officially handing over your beautifully transformed and move-in-ready space.</p>
+        </div>
+      </div>
+
+      <!-- 67 -->
+      <div class="col-12 col-md-6 col-lg-4 mb-4 process-col" data-step="67">
+        <div class="process-card h-100">
+          <div class="process-icon"><i class="fas fa-home"></i></div>
+          <h5 class="process-title">18. Aftercare</h5>
+          <p class="process-text">Our support doesn't end with the handover. We provide ongoing maintenance advice and remain available to address any questions you may have, ensuring your new interiors stay in pristine condition.</p>
+        </div>
+      </div>
+    </div>
+  </div> 
+      <!-- Modern Timeline Component -->
+    <div class="modern-timeline">
+      <div class="timeline-progress">
+        <div class="progress-bar" style="width: 100%"></div>
+      </div>
+      <div class="timeline-steps">
+        <div class="timeline-step">
+          <div class="step-dot active"></div>
+          <div class="step-label">1. Consultation</div>
+          <div class="step-connector"></div>
+        </div>
+        <div class="timeline-step">
+          <div class="step-dot"></div>
+          <div class="step-label">2. Design</div>
+          <div class="step-connector"></div>
+        </div>
+        <div class="timeline-step">
+          <div class="step-dot"></div>
+          <div class="step-label">3. Execution</div>
+          <div class="step-connector"></div>
+        </div>
+        <div class="timeline-step">
+          <div class="step-dot"></div>
+          <div class="step-label">4. Launch / Handover</div>
+        </div>
+      </div>
+      <div class="timeline-estimate">
+        <div class="estimate-badge">
+          <i class="fas fa-clock"></i>
+          <span>Estimated Timeframe</span>
+        </div>
+        <h3 id="process-duration">~45 days after Design Phase</h3>
+        <p class="timeline-note">Projected completion based on current progress</p>
+      </div>
+    </div>
+
+</section>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  // Collect buttons and process columns
+  const buttons  = Array.from(document.querySelectorAll('.process-filter'));
+  const cols     = Array.from(document.querySelectorAll('.process-col'));
+  const duration = document.getElementById('process-duration');
+
+  // Build a Set of available numeric steps from DOM (as Numbers)
+  const existingSteps = new Set(
+    cols.map(c => Number(c.dataset.step)).filter(n => !isNaN(n))
+  );
+
+  // Helper show/hide
+  function hideEl(el) {
+    if (el.classList) el.classList.add('d-none');
+    else el.setAttribute('hidden', 'true');
+  }
+  function showEl(el) {
+    if (el.classList) el.classList.remove('d-none');
+    else el.removeAttribute('hidden');
+  }
+
+  // Define filter groups
+  const FILTER_MAP = {
+    modular:    Array.from(existingSteps).filter(n => n >= 1 && n <= 9).sort((a,b)=>a-b),
+    renovation: Array.from(existingSteps).filter(n => n >= 11 && n <= 25).sort((a,b)=>a-b),
+    full:       Array.from(existingSteps).filter(n => n >= 31 && n <= 45).sort((a,b)=>a-b),
+    bare:       Array.from(existingSteps).filter(n => n >= 50 && n <= 67).sort((a,b)=>a-b),
+  };
+
+  // Timeline messages with detailed information
+  const DURATION_MAP = {
+    modular: {
+      duration: "~45 days after Design Phase (varies by project scope)",
+      description: "For modular projects with standard configurations"
+    },
+    full: {
+      duration: "~60 days after Design Phase (varies by project scope)",
+      description: "For full home renovations with custom requirements"
+    },
+    bare: {
+      duration: "~90-130 days total (varies by project scope)",
+      description: "Complete project from design to final handover"
+    },
+    renovation: {
+      duration: "~60-90 days total (varies by project scope)",
+      description: "For renovation projects with structural changes"
+    }
+  };
+  
+  // Update the timeline based on selected filter
+  function updateTimeline(filter) {
+    const timelineData = DURATION_MAP[filter];
+    if (!timelineData) return;
+    
+    // Update the duration text
+    if (duration) {
+      duration.textContent = timelineData.duration;
+    }
+    
+    // Update the description
+    const note = document.querySelector('.timeline-note');
+    if (note) {
+      note.textContent = timelineData.description;
+    }
+  }
+
+  // Ensure no accidental hiding on load
+  cols.forEach(c => showEl(c));
+
+  // Apply filter function
+  function applyFilter(name) {
+    const allowed = new Set(FILTER_MAP[name] || []);
+    cols.forEach(c => {
+      const step = Number(c.dataset.step || 0);
+      if (allowed.size === 0) {
+        showEl(c);
+      } else {
+        if (allowed.has(step)) showEl(c);
+        else hideEl(c);
+      }
+    });
+
+    // update active button state
+    buttons.forEach(b => {
+      const isActive = (b.dataset.filter === name);
+      b.setAttribute('aria-pressed', String(isActive));
+      b.classList.toggle('active', isActive);
+    });
+
+    // Update the timeline display
+    updateTimeline(name);
+  }
+
+  // Button click/keyboard
+  buttons.forEach(btn => {
+    btn.addEventListener('click', () => applyFilter(btn.dataset.filter));
+    btn.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        applyFilter(btn.dataset.filter);
+      }
+    });
+  });
+
+  // === NEW PART: Check URL parameter for default filter ===
+  const params = new URLSearchParams(window.location.search);
+  const defaultFilter = params.get('filter');
+
+  if (defaultFilter && FILTER_MAP[defaultFilter]) {
+    applyFilter(defaultFilter);
+  } else {
+    // fallback default order: modular > full > renovation > bare
+    if ((FILTER_MAP.modular || []).length > 0) {
+      applyFilter('modular');
+    } else if ((FILTER_MAP.full || []).length > 0) {
+      applyFilter('full');
+    } else if ((FILTER_MAP.renovation || []).length > 0) {
+      applyFilter('renovation');
+    } else if ((FILTER_MAP.bare || []).length > 0) {
+      applyFilter('bare');
+    } else if (buttons.length) {
+      applyFilter(buttons[0].dataset.filter);
+    }
+  }
+});
+document.addEventListener("DOMContentLoaded", () => {
+  // Check if URL has a hash (like #modular)
+  const hash = window.location.hash.substring(1); // removes #
+  if (hash) {
+    const button = document.getElementById(hash);
+    if (button) {
+      // Smooth scroll to button
+      button.scrollIntoView({ behavior: "smooth", block: "center" });
+      
+      // Trigger click to activate filter
+      button.click();
+    }
+  }
+});
+
+</script>
+
+
+
+    <!-- Footer -->
+    <footer class="ftco-footer ftco-bg-dark ftco-section">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4">
+              <img src="img/logo-2.png" alt="NESH Logo" style="height: 40px;">
+              <p>At Neshstories, we believe every space should embody the essence of its inhabitants. 
+                “Create the Story You Love, with Neshstories”</p>
+              <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-3">
+                <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
+                <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
+                <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4 ml-md-4">
+              <h2 class="ftco-heading-2">Links</h2>
+              <ul class="list-unstyled">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Project</a></li>
+                <li><a href="tel:+918939063726">Contact</a></li>
+                <li><a href="terms.html">Policies</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">Services</h2>
+              <ul class="list-unstyled">
+                <li><a href="projects.html?filter=modular">Modular Interiors</a></li>
+                <li><a href="projects.html?filter=full">Full Home Interiors</a></li>
+                <li><a href="projects.html?filter=renovation">Home Renovation</a></li>
+                <li><a href="projects.html?filter=bare">Bare Shell Interiors</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">Have a Question?</h2>
+              <div class="block-23 mb-3">
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="https://www.google.com/maps?q=17/7a+Nalwar+Street,+East+Tambaram,+Chennai+600059" target="_blank">
+                      <strong>Address:</strong> 17/7a, Nalwar street, East Tambaram, Chennai-600059.
+                    </a>
+                  </li>
+                    <li><span class="icon icon-phone"></span>
+  <span class="text"><strong>Contact:</strong></span><br>
+  <a href="tel:+918939063726">8939063726</a>, 
+  <a href="tel:+916382698780">6382698780</a>
+</li>
+
+                  <li>
+                    <a href="mailto:nesthomeinfo0322@gmail.com">
+                      <span class="icon icon-envelope"></span>
+                      <span class="text"><strong>Email:</strong> nesthomeinfo0322@gmail.com</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer-bottom">
+            <div class="social-box">
+              <ul>
+                <li><a href="https://www.facebook.com/profile.php?id=61577803125243"><i class="fa fa-facebook"></i><span>Facebook</span></a></li>
+                <li><a href="https://x.com/neshstories"><i class="fa-brands fa-x-twitter"></i><span>X</span></a></li>
+                <li><a href="mailto:nesthomeinfo0322@gmail.com"><i class="fa fa-google"></i><span>Gmail</span></a></li>
+                <li><a href="https://www.instagram.com/neshstories"><i class="fa fa-instagram"></i><span>Instagram</span></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+    </footer>
+
+<!-- partial:index.partial.html -->
+<!-- WhatsApp floating (left bottom) -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<a href="https://wa.me/918939063726?text=Hello!%20Can%20I%20get%20more%20info%20on%20this?" class="whatsapp-float" target="_blank" aria-label="WhatsApp">
+  <span class="whatsapp-icon"><i class="fa fa-whatsapp" aria-hidden="true"></i></span>
+  <span class="whatsapp-badge">1</span>
+</a>
+<!-- partial -->
+  
+</body>
+</html>
+        
+        
+        
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <script src="js/popper.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/stellar.js"></script>
+        <script src="vendors/lightbox/simpleLightbox.min.js"></script>
+        <script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
+        <script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
+        <script src="vendors/isotope/isotope-min.js"></script>
+        <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+        <script src="js/jquery.ajaxchimp.min.js"></script>
+        <script src="vendors/counter-up/jquery.waypoints.min.js"></script>
+        <script src="vendors/counter-up/jquery.counterup.min.js"></script>
+        <script src="js/mail-script.js"></script>
+        <script src="js/script71.js"></script>
+        <!--gmaps Js-->
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
+        <script src="js/gmaps.min.js"></script>
+        <script src="js/theme.js"></script>
+        <div class="text-center py-3" style="background: transparent; font-size: 14px; margin: 20px auto 0; max-width: 1200px; padding: 0 15px;">
+            <div style="display: inline-block; text-align: center;">
+                <p class="mb-0" style="color: #555; font-family: 'Poppins', sans-serif; letter-spacing: 0.5px; display: inline-block; margin: 0 10px 0 0; vertical-align: middle;">
+                    Website by <a href="https://eantrax.com" target="_blank" style="color: #ff9900; text-decoration: none; font-weight: 500; transition: all 0.3s ease;">Eantrax</a>
+                </p>
+                <div class="eantrax-logo">
+                    <a href="https://eantrax.com" target="_blank" title="Visit Eantrax">
+                        <img src="img/eantrax-logo.png" alt="Eantrax Logo">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <link rel="stylesheet" href="css/eantrax-animation.css">
+    </body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Terms and Conditions</title>
+  <link rel="stylesheet" href="css/style191.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms and Conditions</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <header class="main-header dark-theme">
+
+        <ul class="header-options">
+    
+             <li class="option"> <a href="terms.html"> Terms and Privacy </a></li>
+            <li class="option"> <a href="cancellation.html"> Cancellation policy </a></li>
+            <li class="option"> <a href="warranty.html"> Warranty </a> </li>
+            <li class="title"> Delay Penalty </li>
+        </ul>
+    
+    </header>
+<header class="header-mobile dark-theme">
+    <div class="mobile-header-inner">
+        <button class="mobile-toggle" aria-expanded="false" aria-label="Open menu">☰</button>
+        <h3 class="title-mobile">Delay Penalty</h3>
+    </div>
+    <nav class="mobile-options" aria-hidden="true">
+        <ul>
+            <li><a href="terms.html">Terms and Privacy</a></li>
+            <li><a href="cancellation.html">Cancellation policy</a></li>
+            <li><a href="warranty.html">Warranty</a></li>
+            <li class="active">Delay Penalty</li>
+        </ul>
+    </nav>
+</header>
+
+<section id="delay-penalty">
+    <div class="card">
+        <h1 class="primary-heading">Delay Penalty</h1>
+        <p class="paragraph">
+            This policy outlines the conditions for a delay penalty if your project is not completed by the confirmed move-in date.
+            <br><br>
+            <span class="bold">What is a Delay Penalty?</span><br>
+            A delay penalty is a discount given to you if your project handover is delayed by more than 15 days beyond the confirmed move-in date. The penalty is calculated at 0.1% of the total project value for each day of delay after this grace period.<br>
+• The maximum penalty is capped at 3% of the total project value. <br>
+• Penalties are issued as a cashback.
+     <p class="paragraph">
+    <ul class="paragraph">
+    
+
+
+    <span class="bold">When the Penalty is Not Applicable</span><br>
+    The delay penalty is void and will not apply in the following situations:<br>
+    - <span class="bold">Customer-Driven Changes:</span> Any changes to the design, materials, or scope of work after the move-in date is communicated.<br>
+    - <span class="bold">Customer Responsibilities:</span> Delays caused by work or approvals handled by you, including site access, utility availability (power/water), and local authority approvals.<br>
+    - <span class="bold">Payment Delays:</span> Non-payment, partial payments, or late payments.<br>
+    - <span class="bold">Third-Party Issues:</span> Delays in production or delivery from third-party brands.<br>
+    - <span class="bold">Force Majeure:</span> Events beyond our control, such as natural disasters, strikes, power failures, or unforeseen supply issues. Neshstories will notify you of such delays within 72 hours.
+</p>
+
+        </p>
+    </div>
+</section>
+
+
+    <footer>
+        <p class="footer-heading">© Copyright 2025. All rights reserved.</p>
+    </footer>
+    <script>
+    // Mobile header toggle
+    (function(){
+        var toggle = document.querySelector('.mobile-toggle');
+        var menu = document.querySelector('.mobile-options');
+        if(!toggle || !menu) return;
+        function openMenu(){
+            toggle.setAttribute('aria-expanded', 'true');
+            menu.setAttribute('aria-hidden', 'false');
+            menu.classList.add('open');
+        }
+        function closeMenu(){
+            toggle.setAttribute('aria-expanded', 'false');
+            menu.setAttribute('aria-hidden', 'true');
+            menu.classList.remove('open');
+        }
+        toggle.addEventListener('click', function(e){
+            var expanded = this.getAttribute('aria-expanded') === 'true';
+            if(expanded) closeMenu(); else openMenu();
+        });
+        menu.addEventListener('click', function(e){
+            if(e.target === menu) closeMenu();
+        });
+        document.addEventListener('keydown', function(e){
+            if(e.key === 'Escape' && menu.classList.contains('open')) closeMenu();
+        });
+    })();
+    </script>
+    <div class="text-center py-3" style="background: transparent; font-size: 14px; margin: 20px auto 0; max-width: 1200px; padding: 0 15px;">
+        <div style="display: inline-block; text-align: center;">
+            <p class="mb-0" style="color: #555; font-family: 'Poppins', sans-serif; letter-spacing: 0.5px; display: inline-block; margin: 0 10px 0 0; vertical-align: middle;">
+                Website by <a href="https://eantrax.com" target="_blank" style="color: #ff9900; text-decoration: none; font-weight: 500; transition: all 0.3s ease;">Eantrax</a>
+            </p>
+            <div class="eantrax-logo">
+                <a href="https://eantrax.com" target="_blank" title="Visit Eantrax">
+                    <img src="img/eantrax-logo.png" alt="Eantrax Logo">
+                </a>
+            </div>
+        </div>
+    </div>
+    <link rel="stylesheet" href="css/eantrax-animation.css">
+</body>
+</html>
+<!-- partial -->
+  
+</body>
+</html>
