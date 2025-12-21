@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500;700&display=swap');
+
+/* =======================
+   CSS VARIABLES
+======================= */
+:root {
+    --bg-dark: #242836;
+    --bg-darker: #181A24;
+    --card-bg: #333541;
+    --text-light: #fff;
+    --text-gray: #6D6F79;
+    --text-gray-hover: #9598a7;
+}
+
+/* =======================
+   GLOBAL STYLES
+======================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    width: 100%;
+    min-height: 100%;
+    background-color: var(--bg-dark);
+    font-family: 'Josefin Sans', Arial, sans-serif;
+}
+
+/* =======================
+   SCROLLBAR
+======================= */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bg-dark);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--card-bg);
+    border-radius: 4px;
+}
+
+/* =======================
+   HEADER
+======================= */
+.main-header {
+    width: 100%;
+    height: 75px;
+    background-color: var(--bg-darker);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-header ul.header-options {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-right: 100px;
+}
+
+.main-header ul.header-options li {
+    display: inline-block;
+}
+
+.main-header ul.header-options li.title {
+    font-size: 18px;
+    color: var(--text-light);
+    cursor: pointer;
+}
+
+.header-mobile {
+    width: 100%;
+    height: 75px;
+    background-color: var(--bg-darker);
+    text-align: center;
+    display: none;
+}
+
+.title-mobile {
+    font-size: 18px;
+    color: var(--text-light);
+    cursor: pointer;
+    padding-top: 30px;
+}
+
+/* =======================
+   LINKS
+======================= */
+a {
+    text-decoration: none;
+    font-size: 16px;
+    color: var(--text-gray);
+    cursor: pointer;
+    transition: color 0.3s ease, font-size 0.3s ease;
+}
+
+a:hover {
+    color: var(--text-gray-hover);
+}
+
+/* =======================
+   CARD
+======================= */
+.card {
+    margin: 100px auto;
+    width: 1200px;
+    border-radius: 30px;
+    background-color: var(--card-bg);
+    padding: 50px;
+}
+
+/* CARD CONTENT */
+.card .primary-heading {
+    text-align: center;
+    color: var(--text-light);
+    font-size: 4em;
+    margin-bottom: 50px;
+}
+
+.paragraph {
+    color: rgb(179, 179, 179);
+    margin: 0 50px 50px 50px;
+    font-size: 1.5em;
+    line-height: 1.3em;
+    font-weight: 500;
+}
+
+.bold {
+    font-weight: 700;
+    color: var(--text-light);
+}
+
+.footer-heading {
+    text-align: center;
+    color: var(--text-light);
+    margin-bottom: 50px;
+    font-size: 2em;
+    line-height: 35px;
+}
+
+/* =======================
+   RESPONSIVE
+======================= */
+@media only screen and (max-width: 1218px) {
+    .card { width: 1000px; }
+}
+
+@media only screen and (max-width: 1012px) {
+    .card { width: 800px; }
+}
+
+@media only screen and (max-width: 832px) {
+    .card { width: 600px; }
+    .card .primary-heading { font-size: 3.5em; }
+    .footer-heading { font-size: 1.5em; }
+}
+
+@media only screen and (max-width: 626px) {
+    .card { width: 450px; }
+    .card .primary-heading { font-size: 3em; }
+    .header-mobile { display: block; }
+    .main-header { display: none; }
+}
+
+@media only screen and (max-width: 480px) {
+    .card { width: 350px; }
+    .card .primary-heading { font-size: 2em; }
+}
+
+@media only screen and (max-width: 365px) {
+    .card { width: 290px; }
+}
+
+/* Make tables inside cards responsive and prevent horizontal overflow */
+.card table {
+    width: 100%;
+    max-width: 100%;
+    table-layout: fixed; /* allow cells to wrap */
+    border-collapse: collapse;
+}
+.card th,
+.card td {
+    word-break: break-word;
+    white-space: normal;
+    overflow-wrap: break-word;
+    padding: 8px;
+}
+
+/* Small-screen specific fixes */
+@media only screen and (max-width: 626px) {
+    /* let card fit viewport and not overflow */
+    .card {
+        width: calc(100% - 32px) !important;
+        margin: 20px auto !important;
+        padding: 18px !important;
+        box-sizing: border-box;
+    }
+
+    /* allow horizontal scrolling for wide tables, but encourage wrapping */
+    .card table {
+        display: block;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    /* reduce padding and font-size in table cells on very small screens */
+    .card th,
+    .card td {
+        padding: 6px 8px !important;
+        font-size: 0.9rem !important;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .card { width: calc(100% - 24px) !important; padding: 14px !important; }
+    .card th,
+    .card td { font-size: 0.85rem !important; }
+}
+
+/* Mobile paragraph and card fixes to prevent left cutoff */
+@media only screen and (max-width: 626px) {
+    .card {
+        width: calc(100% - 32px) !important;
+        margin: 20px auto !important;
+        padding: 18px !important;
+        border-radius: 18px;
+        box-sizing: border-box;
+    }
+    .card .primary-heading {
+        font-size: 1.8rem !important;
+        margin-bottom: 18px !important;
+    }
+    .paragraph {
+        margin: 0 12px 18px 12px !important;
+        font-size: 1rem !important;
+        line-height: 1.6 !important;
+        text-align: left !important;
+        color: rgb(179,179,179) !important;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .card { width: calc(100% - 24px) !important; padding: 14px !important; }
+    .paragraph { margin: 0 10px 16px 10px !important; font-size: 0.95rem !important; line-height: 1.6 !important; }
+}
+
+/* Mobile header/menu styles (explicit small-screen rules) */
+@media only screen and (max-width: 626px) {
+    .main-header { display: none !important; }
+    .header-mobile { display: block !important; background: var(--bg-darker); padding: 0 12px; position:relative; z-index:10000; height:56px; }
+    .mobile-header-inner { display:block; height:100%; position:relative; }
+    .mobile-toggle { position:absolute; left:12px; top:50%; transform:translateY(-50%); background:transparent; border:0; color: var(--text-light); font-size:20px; padding:6px 8px; cursor:pointer; z-index:10001; }
+    .title-mobile { position:absolute; left:50%; top:50%; transform:translate(-50%,-50%); margin:0; font-size:16px; color:var(--text-light); font-weight:700; pointer-events:none; }
+
+    /* Full-viewport backdrop when menu opens */
+    .mobile-options {
+        display: none;
+        position: fixed;
+        inset: 0; /* top:0; right:0; bottom:0; left:0 */
+        background: rgba(0,0,0,0.45);
+        z-index: 9998;
+        -webkit-overflow-scrolling: touch;
+        transition: opacity 220ms ease;
+        opacity: 0;
+    }
+    .mobile-options.open { display: block; opacity: 1; }
+
+    /* White panel containing the menu items, below header */
+    .mobile-options ul {
+        list-style: none;
+        margin: 82px 12px 12px; /* leave space for header */
+        padding: 8px;
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+        max-height: calc(100vh - 100px);
+        overflow: auto;
+        transform-origin: top center;
+        transition: transform 220ms ease, opacity 220ms ease;
+    }
+    .mobile-options.open ul { transform: translateY(0); opacity: 1; }
+    .mobile-options ul li { padding:12px 10px; border-bottom: 1px solid #f1f1f1; }
+    .mobile-options ul li a { color: #222; text-decoration:none; font-size:15px; display:block; }
+    .mobile-options ul li.active, .mobile-options ul li.active a { color:#111; font-weight:700; }
+
+    /* Make sure card content rests below the mobile header */
+    .card { margin-top: 12px !important; }
+}
+
+/* Ensure menu becomes visible when aria-hidden toggled */
+.mobile-options[aria-hidden="false"] { display:block; opacity:1; }
